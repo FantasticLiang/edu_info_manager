@@ -1,6 +1,7 @@
 package system.info.edu.main_menu;
 import java.util.Scanner;
 import system.info.edu.student_menu.StudentMenu;
+import system.info.edu.teacher_menu.TeacherMenu;
 public class MainMenu {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
@@ -16,10 +17,11 @@ public class MainMenu {
             switch(choose){
                 case "1":
                     StudentMenu studentMenu=new StudentMenu();
-                    studentmenu.start();
+                    studentMenu.start();
                     break;
                 case "2":
                     TeacherMenu teacherMenu=new TeacherMenu();
+                    teacherMenu.start();
                     break;
                 case "3":
                     System.exit(0);
