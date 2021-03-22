@@ -15,11 +15,11 @@ public class MainMenu {
             String choose=sc.next();
             switch(choose){
                 case "1":
-                    StudentMenu studentmenu=new StudentMenu();
+                    StudentMenu studentMenu=new StudentMenu();
                     studentmenu.start();
                     break;
                 case "2":
-                    System.out.println("Teacher System");
+                    TeacherMenu teacherMenu=new TeacherMenu();
                     break;
                 case "3":
                     System.exit(0);
