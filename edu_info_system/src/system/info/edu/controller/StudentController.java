@@ -10,7 +10,7 @@ public class StudentController {
             System.out.println("Welcome to Student System");
             System.out.println("1.Add Student");
             System.out.println("2.Delete Student");
-            System.out.println("3.Change Student");
+            System.out.println("3.Update Student");
             System.out.println("4.Show Student");
             System.out.println("5.Exit");
             System.out.println("Please enter the number to use the function:");

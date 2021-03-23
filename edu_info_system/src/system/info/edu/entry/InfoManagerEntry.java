@@ -1,6 +1,7 @@
 package system.info.edu.entry;
 import java.util.Scanner;
 import system.info.edu.controller.StudentController;
+import system.info.edu.controller.TeacherController;
 public class InfoManagerEntry {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
@@ -17,7 +18,8 @@ public class InfoManagerEntry {
                     studentController.start();
                     break;
                 case "2":
-                    System.out.println("Teacher System");
+                    TeacherController teacherController=new TeacherController();
+                    teacherController.start();
                     break;
                 case "3":
                     System.exit(0);
