@@ -1,4 +1,4 @@
-package system.info.edu.student;
+package system.info.edu.domain;
 
 public class Student {
     private String id;
@@ -11,18 +11,6 @@ public class Student {
         this.id=id;
         this.name=name;
         this.age=age;
-        this.birthday=birthday;
-    }
-    public void setId(String id){
-        this.id=id;
-    }
-    public void setName(String name){
-        this.name=name;
-    }
-    public void setAge(String age){
-        this.age=age;
-    }
-    public void setBirthday(String birthday){
         this.birthday=birthday;
     }
     public String getId(){
