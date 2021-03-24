@@ -1,7 +1,10 @@
 package system.info.edu.dao;
 import system.info.edu.domain.Student;
-public class StudentDao {
+public class StudentDao implements BaseStudentDao{
     private static Student[] stus=new Student[5];
+    static {
+        stus[1]=new Student("1","1","1","1");
+    }
     public boolean addStudent(Student stu){
         int index=-1;
         for(int i=0;i<stus.length;i++){
