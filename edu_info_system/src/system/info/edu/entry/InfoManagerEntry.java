@@ -6,7 +6,7 @@ public class InfoManagerEntry {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         while(true){
-            System.out.println("Welcom to Education System");
+            System.out.println("Welcome to Education System");
             System.out.println("1.Student System");
             System.out.println("2.Teacher System");
             System.out.println("3.Exit");

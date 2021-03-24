@@ -86,8 +86,8 @@ public class StudentController {
             System.out.println("Please enter the id:");
             id=sc.next();
             boolean flag=studentService.isExist(id);
-            if(flag){
-                System.out.println("Repeat student, please enter another id:");
+            if(!flag){
+                System.out.println("No this student");
             }else{
                 break;
             }
