@@ -1,8 +1,10 @@
 package system.info.edu.service;
 import system.info.edu.domain.Student;
 import system.info.edu.dao.OtherStudentDao;
+import system.info.edu.dao.BaseStudentDao;
+import system.info.edu.factory.StudentDaoFactory;
 public class StudentService {
-    private OtherStudentDao studentDao=new OtherStudentDao();
+    private BaseStudentDao studentDao=StudentDaoFactory.getStudentDao();
     public boolean addStudent(Student stu){
         return studentDao.addStudent(stu);
     }
